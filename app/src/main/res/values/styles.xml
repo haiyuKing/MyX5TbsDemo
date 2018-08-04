@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- ==================X5Webview========网页加载时的进度对话框========================== -->
+    <style name="x5webview_loading_style" parent="android:style/Theme.Dialog">
+        <!-- Dialog的windowFrame框为无 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否显示title -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 设置dialog的背景：#00000000透明色 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 背景变灰：整个屏幕变灰，配合setCanceledOnTouchOutside(false) -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 对话框是否有遮盖 -->
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+</resources>

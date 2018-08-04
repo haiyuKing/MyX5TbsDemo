@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="content-type">
+        <meta http-equiv="keywords" content="测试">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <title>
+            webview
+        </title>
+    </head>
+    
+    <body>
+        <p>
+            <input type="file" value="打开文件" />
+        </p>
+
+		<p>
+            点击下面的按钮，获取的文件路径：
+        </p>
+        <p>
+            <input type="text" id="filePath" value="文件路径" style="width:100%"/>
+        </p>
+		<p>
+            <input type="button" id="openRecord" value="打开录音" onclick="window.androidMethod.openRecord();"/>
+        </p>
+		<p>
+            <input type="button" id="takePicture" value="打开相机" onclick="window.androidMethod.takePicture();"/>
+        </p>
+		<p>
+            <input type="button" id="choosePic" value="打开本地相册" onclick="window.androidMethod.choosePic();"/>
+        </p>
+        <p>
+            <a href='tel:10010'>拨打电话：10010</a>
+        </p>
+    </body>
+    <script>
+        //打开录音、打开相机、打开本地相册，选择文件后返回的路径
+        function setInputText(urlPath){
+            document.getElementById("filePath").value = urlPath;
+        }
+    </script>
+
+</html>
